@@ -1,0 +1,296 @@
+@import "compass";
+@import "foundation";
+@import "type/ss-social-circle";
+@import "type/ss-social-regular";
+@import "http://fonts.googleapis.com/css?family=Montserrat";
+
+@mixin skolar {
+	font-family: "skolar", serif;
+}
+@mixin montserrat {
+	font-family: 'Montserrat', Calibri, Helvetica, Arial, Verdana, sans-serif;
+}
+
+$edge-spacing: 15px;
+$element-spacing: 20px;
+$inner-spacing: 30px;
+$medium-breakpoint: 850px;
+$small-breakpoint: 550px;
+$orange: #DB5A23;
+$blue: darken(#18ABB5, 5%);
+$lighterblue: #15C7D4;
+
+html, body {height: 100%;}
+body {
+	background-image: image-url("speckles.png");
+	img {margin-bottom: $element-spacing;}
+	.featured {
+		@include grid-column(12);
+	}
+	.description {
+		@include grid-column(8);
+	}
+	.details {
+		@include grid-column(3, false, false, false, 1);
+		@include skolar;
+		@include single-transition(all);
+		font-style: italic;
+		line-height: 24px;
+		list-style-type: none;
+		strong {
+			@include montserrat;
+			color: #999;
+			display: block;
+			font-style: normal;
+			font-variant: small-caps;
+			text-transform: lowercase;
+		}
+		hr {width: 50%;}
+	}
+	@media screen and (max-width: $medium-breakpoint) {
+		.details {@include grid-column(4, false, false, false, 0)};
+	}
+	@media screen and (max-width: 790px) {
+		.description {@include grid-column(12);}
+		.details {@include grid-column(4, false, false, false, 0)};
+		.details {@include grid-row;}
+		.details li {
+			@include grid-column(3);
+			border-top: 1px solid #ccc;
+			display: inline-block;
+			height: 100%;
+			padding: $edge-spacing $edge-spacing $edge-spacing 0;
+		}
+		.details li.longform {
+			@include grid-row;
+			border-top: 1px solid #ccc;
+			padding-top: $edge-spacing;
+		}
+		hr {display: none;}
+	}
+	@media screen and (max-width: $small-breakpoint) {
+		.details li {
+			@include grid-column(6);
+			padding-left: 0;
+		}
+	}
+}
+
+p {
+	font-size: 15px;
+	> span.lead {
+		@include montserrat;
+		font-size: 14px;
+		color: $orange;
+	}
+}
+
+a {
+	@include single-transition(all);
+	color: $blue;
+	&:hover {
+		color: $lighterblue;
+	}
+}
+#main a {
+	&:hover {
+		border-bottom: 1px solid #ddd;
+	}
+}
+
+#main > section {
+	@include grid-row;
+	> p {
+		@include grid-column(12);
+	}
+	padding-bottom: $inner-spacing;
+}
+
+
+#main {
+	background-color: #fff;
+	padding-top: $inner-spacing;
+}
+
+header {
+	div {@include grid-row;}
+	background-color: #000;
+	padding-top: $edge-spacing;
+	h1, ul {
+		@include single-transition(all);
+		padding: 0;
+	}
+	h1 {
+		@include grid-column(6);
+		color: #fff;
+		font-family: "brandon-grotesque", sans-serif;
+		font-size: 24px;
+		font-weight: bold;
+		font-variant: small-caps;
+		line-height: 1.5;
+		letter-spacing: 1px;
+		margin: 0 0 0 -5px;
+		text-align: left;
+		text-transform: lowercase;
+		word-spacing: 3px;
+		a {
+			@include single-transition(all);
+			color: #fff;
+			display: inline-block;
+			padding-left: 3px;
+			&:hover {
+				border-bottom: 1px solid #ddd;
+				color: $orange;
+			}
+		}
+	}
+	ul {
+		@include grid-column(6);
+		line-height: 36px;
+		text-align: right;
+	}
+	li {
+		@include skolar;
+		color: #fff;
+		display: inline-block;
+		font-size: 16px;
+		font-style: italic;
+	}
+	li:before {
+		content: "\00B7";
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	li:first-child:before {
+		content: "";
+		padding: 0;
+	}
+	@media screen and (max-width: $small-breakpoint) {
+		h1, ul {text-align: center;}
+		h1 {@include grid-column(12);}
+		ul {@include grid-column(12);}
+	}
+}
+
+/*
+@645px need to change the navigation from horizontal to vertical in top bar 
+*/
+
+.work-display {
+	@include block-grid(3, $block-grid-default-spacing, true);
+	img {margin-bottom: 0;}
+	@include single-transition(all);
+	padding: 0 $edge-spacing;
+	@media screen and (max-width: $medium-breakpoint) {
+		@include block-grid(2, $block-grid-default-spacing, true);
+		padding: 0 $edge-spacing;
+	}
+	@media screen and (max-width: $small-breakpoint) {
+		@include block-grid(1, $block-grid-default-spacing, true);
+		padding: 0 $edge-spacing;
+		text-align: center;
+	}
+}
+
+footer {
+	@include single-box-shadow(#091d2c, 0, 10px, 20px, 0, true);
+	div {@include grid-row;}
+	#colophon, #elsewhere { 
+		@include single-transition(all);
+		margin-top: $edge-spacing; 
+	}
+	#colophon {
+		@include grid-column(8);
+		@include single-text-shadow(#091d2c, 2px, 2px, 1px);
+		@include skolar;
+		color: #999;
+		font-size: 14px;
+		a {
+			@include montserrat;
+			display: inline-block;
+			font-size: 18px;
+			font-style: normal;
+			font-variant: small-caps;
+			letter-spacing: 1px;
+			line-height: 30x;
+			text-transform: lowercase;
+			margin: 0 1px 0 2px;
+		}
+		a:hover {
+			border-bottom: 1px solid #aaa;
+		}
+	}
+	#elsewhere {
+		@include grid-column(4);
+		font-size: 24px;
+		line-height: 30px;
+		text-align: right;
+		ul {
+			margin-bottom: 0;
+			li {
+				@include single-text-shadow(#091d2c, 2px, 2px, 1px);
+				display: inline-block;
+				padding: none;
+			}
+		}
+	}
+	@media screen and (max-width: 690px) {
+		#colophon, #elsewhere {text-align: center;}
+		#colophon {@include grid-column(12);}
+		#elsewhere {
+			@include grid-column(12);
+			margin: -10px auto 10px;
+		}
+	}
+}
+
+figure {
+	img {
+		border: 1px solid rgba(0, 0, 0, 0);
+		@include border-radius(10px);
+	}
+}
+figure.text-overlay {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	img {
+		@include single-transition(all);
+	}
+	figcaption {
+		color: #fff;
+		display: none;
+	  position: absolute;
+	  top: 45%;
+	  width: 100%;
+	  &.long {top: 35%;}
+	  h6, p {
+	  	@include single-text-shadow(#091d2c, 0px, 1px, 2px);
+	  }
+	  h6 {
+	  	border: 1px solid #fff;
+	  	color: #fff;
+	  	display: inline-block;
+	  	font-size: 1em;
+	  	font-family: "brandon-grotesque", sans-serif;
+	  	font-variant: small-caps;
+	  	margin-bottom: 20px;
+	  	padding: 3px 8px 3px 12px;
+	  	text-transform: lowercase;
+	  }
+	  p {
+	  	@include skolar;
+	  	font-size: 1em;
+	  	font-style: italic;
+	  	line-height: 1.3;
+	  	padding: 0 15%;
+	  	text-align: center;
+	  }
+	}
+	&:hover {
+		img {
+			@include filter(brightness(30%));
+		}
+		figcaption {display: block;}
+	}
+}

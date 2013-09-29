@@ -1,0 +1,19 @@
+---
+title: Hello, I'm Celine Nguyen
+---
+
+<ul class="work-display">
+	<% data.work.each do |item| %>
+  <li>
+  	<a href="/<%= item.permalink %>">
+	  	<figure class="text-overlay">
+		  	<%= image_tag item.thumb %>
+		  	<figcaption class="long">
+		  		<h6><%= item.type.titlecase %></h6>
+		  		<p><%= item.description %></p>
+		  	</figcaption>
+	  	</figure>
+	  </a>
+  </li>
+ 	<% end %>
+</ul>
