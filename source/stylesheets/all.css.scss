@@ -19,6 +19,8 @@ $small-breakpoint: 550px;
 $orange: #DB5A23;
 $blue: darken(#18ABB5, 5%);
 $lighterblue: #15C7D4;
+$cream: #FCFBF7;
+$offgrey: #A3A396;
 
 html, body {height: 100%;}
 body {
@@ -39,7 +41,7 @@ body {
 		list-style-type: none;
 		strong {
 			@include montserrat;
-			color: #999;
+			color: $offgrey;
 			display: block;
 			font-style: normal;
 			font-variant: small-caps;
@@ -108,7 +110,7 @@ a {
 
 
 #main {
-	background-color: #fff;
+	background-color: $cream;
 	padding-top: $inner-spacing;
 }
 
@@ -122,7 +124,7 @@ header {
 	}
 	h1 {
 		@include grid-column(6);
-		color: #fff;
+		color: $cream;
 		font-family: "brandon-grotesque", sans-serif;
 		font-size: 24px;
 		font-weight: bold;
@@ -132,10 +134,10 @@ header {
 		margin: 0 0 0 -5px;
 		text-align: left;
 		text-transform: lowercase;
-		word-spacing: 3px;
 		a {
 			@include single-transition(all);
-			color: #fff;
+			border-bottom: 1px solid #000;
+			color: $cream;
 			display: inline-block;
 			padding-left: 3px;
 			&:hover {
@@ -151,14 +153,14 @@ header {
 	}
 	li {
 		@include skolar;
-		color: #fff;
+		color: $cream;
 		display: inline-block;
 		font-size: 16px;
 		font-style: italic;
 	}
 	li:before {
 		content: "\00B7";
-		padding-left: 10px;
+		padding-left: 8px;
 		padding-right: 10px;
 	}
 	li:first-child:before {
@@ -204,11 +206,14 @@ footer {
 		@include single-text-shadow(#091d2c, 2px, 2px, 1px);
 		@include skolar;
 		color: #999;
-		font-size: 14px;
+		p {
+			font-size: 14px;
+		}
 		a {
 			@include montserrat;
+			border-bottom: 1px solid rgba(0,0,0,0);
 			display: inline-block;
-			font-size: 18px;
+			font-size: 16px;
 			font-style: normal;
 			font-variant: small-caps;
 			letter-spacing: 1px;
@@ -222,7 +227,7 @@ footer {
 	}
 	#elsewhere {
 		@include grid-column(4);
-		font-size: 24px;
+		font-size: 25px;
 		line-height: 30px;
 		text-align: right;
 		ul {
@@ -231,6 +236,7 @@ footer {
 				@include single-text-shadow(#091d2c, 2px, 2px, 1px);
 				display: inline-block;
 				padding: none;
+				padding-left: 5px;
 			}
 		}
 	}
@@ -258,7 +264,7 @@ figure.text-overlay {
 		@include single-transition(all);
 	}
 	figcaption {
-		color: #fff;
+		color: $cream;
 		display: none;
 	  position: absolute;
 	  top: 45%;
@@ -268,8 +274,8 @@ figure.text-overlay {
 	  	@include single-text-shadow(#091d2c, 0px, 1px, 2px);
 	  }
 	  h6 {
-	  	border: 1px solid #fff;
-	  	color: #fff;
+	  	border: 1px solid $cream;
+	  	color: $cream;
 	  	display: inline-block;
 	  	font-size: 1em;
 	  	font-family: "brandon-grotesque", sans-serif;
