@@ -8,36 +8,21 @@
   thumb: alphabet-thumb.png
   permalink: alphabet
   description: Constructing an alphabet out of newsprint and scissors
-- name: intro to html and css
-  type: web design
-  thumb: introtohtmlcss-thumb.png
-  permalink: intro-to-html-css
-  description: "Slidedeck for a workshop on introductory HTML &amp; CSS"
-- name: AXO bidnight lettering
-  type: lettering
-  thumb: axobidnight-thumb.png
-  permalink: axo-bidnight
-  description: Lettering for the Alpha Chi Omega bid night shirts for fall 2013
-- name: GRT 192
-  type: illustration
-  thumb: grt192-thumb.png
-  permalink: grt-192
-  description: Designing a t-shirt for my high school FIRST robotics team
-- name: photography
-  type: photography
-  thumb: placeholder-thumb.gif
-  permalink: photography
-  description: Selected photography from the past two years
 - name: picplum ixd
   type: interaction design
   thumb: picplumixd-thumb.png
   permalink: picplum-interactions
   description: 'Designing user-facing <span class="amp">&amp;</span> developer-facing components of the Picplum website'
-- name: photography
-  type: photography
-  thumb: placeholder-thumb.gif
-  permalink: photography
-  description: Selected photography from the past two years
+- name: lettering
+  type: lettering
+  thumb: commitment-thumb.png
+  permalink: lettering
+  description: Selected lettering from the past two years
+- name: writing
+  type: writing
+  thumb: writing-thumb.png
+  permalink: writing
+  description: 'Essays on design <span class="amp">&amp;</span> technology'
 - name: photography
   type: photography
   thumb: placeholder-thumb.gif
