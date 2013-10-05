@@ -32,8 +32,6 @@
 # Helpers
 ###
 
-# Deploy to Github pages
-require 'middleman-gh-pages'
 # Pretty URLs (pages as directory indexes)
 activate :directory_indexes
 # Automatic image dimensions on image_tag helper
