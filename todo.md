@@ -9,3 +9,8 @@
 
 * write all the portfolio pages ahhhhh
 * get images for all that stuff
+
+---
+
+rake build # compile middleman files into build directory
+rake publish # build and publish to github pages

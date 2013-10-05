@@ -4,6 +4,7 @@ source 'http://rubygems.org'
 
 gem "middleman", "~>3.1.5"
 gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-gh-pages"
 gem "zurb-foundation"
 
 # Cross-templating language block fix for Ruby 1.8
