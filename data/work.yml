@@ -25,6 +25,6 @@
   description: 'Essays on design <span class="amp">&amp;</span> technology'
 - name: photography
   type: photography
-  thumb: placeholder-thumb.gif
+  thumb: photography-thumb.png
   permalink: photography
   description: Selected photography from the past two years
