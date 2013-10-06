@@ -1,0 +1,30 @@
+- name: doisneau
+  type: print design
+  thumb: doisneau-thumb.png
+  permalink: doisneau
+  description: Typesetting a biography of French photographer Robert Doisneau
+- name: alphabet
+  type: typography
+  thumb: alphabet-thumb.png
+  permalink: alphabet
+  description: Constructing an alphabet out of newsprint and scissors
+- name: picplum ixd
+  type: interaction design
+  thumb: picplumixd-thumb.png
+  permalink: picplum-interactions
+  description: 'Designing user-facing <span class="amp">&amp;</span> developer-facing components of the Picplum website'
+- name: lettering
+  type: lettering
+  thumb: commitment-thumb.png
+  permalink: lettering
+  description: Selected lettering from the past two years
+- name: writing
+  type: writing
+  thumb: writing-thumb.png
+  permalink: writing
+  description: 'Essays on design <span class="amp">&amp;</span> technology'
+- name: photography
+  type: photography
+  thumb: placeholder-thumb.gif
+  permalink: photography
+  description: Selected photography from the past two years
