@@ -250,12 +250,11 @@ footer {
 	}
 }
 
-figure {
-	img {
-		border: 2px solid rgba(0, 0, 0, 0.1);
-		@include border-radius(10px);
-	}
+img, figure img {
+	border: 1px solid darken($cream, 10%);
+	@include border-radius(10px);
 }
+
 figure.text-overlay {
 	overflow: hidden;
 	position: relative;
