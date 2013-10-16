@@ -18,11 +18,11 @@
   thumb: commitment-thumb.png
   permalink: lettering
   description: Selected lettering from the past two years
-- name: writing
-  type: writing
-  thumb: writing-thumb.png
-  permalink: writing
-  description: 'Essays on design <span class="amp">&amp;</span> technology'
+- name: helvetica
+  type: 'typography & interaction'
+  thumb: helveticagrid-thumb.png
+  permalink: helveticagrid
+  description: 'Interactive typographic website to showcase the features of Helvetica Neue'
 - name: photography
   type: photography
   thumb: photography-thumb.png
