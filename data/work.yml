@@ -1,6 +1,6 @@
 - name: google
   type: UX Design
-  thumb: placeholder-thumb.png
+  thumb: google-thumb.png
   permalink: google
   description: 'Design (and research!) for the Google Search App for iOS'
 - name: selfportrait

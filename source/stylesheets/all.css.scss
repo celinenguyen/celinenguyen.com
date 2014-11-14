@@ -151,6 +151,7 @@ header {
 		margin: 0 0 0 -5px;
 		text-align: left;
 		text-transform: lowercase;
+		word-spacing: 5px;
 		a {
 			@include single-transition(all);
 			border-bottom: 1px solid #000;
@@ -320,4 +321,13 @@ figure.text-overlay {
 		}
 		figcaption {display: block;}
 	}
+}
+
+.description h3 {
+	@include skolar;
+	font-size: 1.3em;
+	font-style: italic;
+	color: #444;
+	border-bottom: 2px solid #eee;
+	display: inline-block;
 }
