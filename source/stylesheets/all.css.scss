@@ -28,8 +28,8 @@ $inner-spacing: 30px;
 $medium-breakpoint: 850px;
 $small-breakpoint: 550px;
 $orange: #DB5A23;
-$blue: #26948e;
-$darkerblue: darken(#26948e, 5%);
+$blue: #14BEC4; // #26948e;
+$darkerblue: darken(#14BEC4, 5%);
 $lighterblue: #15C7D4;
 $cream: #FCFBF7;
 $background: #fff;
@@ -37,8 +37,6 @@ $offgrey: #A3A396;
 
 html, body {height: 100%;}
 body {
-	// background-image: image-url("speckles.png");
-	background-color: #ddd;
 	color: #333;
 	img {margin-bottom: $element-spacing;}
 	.featured {
@@ -101,7 +99,7 @@ p {
 	> span.lead {
 		@include montserrat;
 		font-size: 14px;
-		color: $orange;
+		// color: $orange;
 	}
 }
 
@@ -134,33 +132,29 @@ a {
 
 header {
 	div {@include grid-row;}
-	background-color: #000;
-	padding-top: $edge-spacing;
+	padding-top: 50px;
 	h1, ul {
 		@include single-transition(all);
 		padding: 0;
 	}
 	h1 {
-		@include proxima-nova;
+		@include montserrat;
 		@include grid-column(6);
-		color: $background;
 		font-size: 24px;
 		font-weight: bold;
 		font-variant: small-caps;
+		letter-spacing: 1px;
 		line-height: 1.5;
-		margin: 0 0 0 -5px;
 		text-align: left;
 		text-transform: lowercase;
-		word-spacing: 5px;
+		word-spacing: 3px;
 		a {
+			margin: 0 0 0 -8px;
 			@include single-transition(all);
-			border-bottom: 1px solid #000;
-			color: $background;
+			color: #333;
 			display: inline-block;
-			padding-left: 3px;
 			&:hover {
-				border-bottom: 1px solid #ddd;
-				color: $orange;
+				color: $blue;
 			}
 		}
 	}
@@ -170,13 +164,16 @@ header {
 		text-align: right;
 	}
 	li {
-		@include skolar;
-		color: $background;
+		@include montserrat;
+		text-transform: uppercase;
 		display: inline-block;
-		font-size: 16px;
+		font-size: 12px;
+		a {
+			color: #aaa;
+		}
 	}
 	li:before {
-		content: "\00B7";
+		content: "\2014";
 		padding-left: 5px;
 		padding-right: 10px;
 	}
@@ -212,23 +209,28 @@ header {
 }
 
 footer {
-	@include single-box-shadow(#bbb, 0, 3px, 5px, 0, true);
 	a {
-		color: #888;
+		color: #aaa;
 		&:hover {
-			color: #555;
+			color: #777;
 		}
 	}
 	div {@include grid-row;}
 	#colophon, #elsewhere { 
 		@include single-transition(all);
 		margin-top: $edge-spacing; 
+		margin-bottom: $inner-spacing;
+		a {
+			color: #aaa;
+			&:hover {
+				color: #777;
+			}
+		}
+		
 	}
 	#colophon {
 		@include grid-column(8);
-		@include single-text-shadow(#bbb, 0px, 1px, 2px);
 		@include skolar;
-		color: #777;
 		p {
 			font-size: 14px;
 		}
@@ -252,7 +254,6 @@ footer {
 		ul {
 			margin-bottom: 0;
 			li {
-				@include single-text-shadow(#bbb, 0px, 1px, 2px);
 				display: inline-block;
 				padding: none;
 				padding-left: 5px;
@@ -271,7 +272,6 @@ footer {
 
 img, figure img {
 	border: 1px solid darken($background, 5%);
-	@include border-radius(3px);
 }
 
 figure.text-overlay {
@@ -294,9 +294,9 @@ figure.text-overlay {
 	  hr {
 	  	background-color: rgba(255, 255, 255, 0.7);
 	  	border: 0;
-	  	height: 5px;
+	  	height: 1px;
 	  	margin: 0 auto 15px;
-	  	width: 15%;
+	  	width: 25%;
 	  }
 	  h6 {
 	  	@include montserrat;
@@ -324,10 +324,13 @@ figure.text-overlay {
 }
 
 .description h3 {
-	@include skolar;
-	font-size: 1.3em;
-	font-style: italic;
+	@include montserrat;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-bottom: 1em;
+	// font-style: italic;
 	color: #444;
-	border-bottom: 2px solid #eee;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #ddd;
 	display: inline-block;
 }
