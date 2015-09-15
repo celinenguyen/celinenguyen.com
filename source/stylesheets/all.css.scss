@@ -130,6 +130,12 @@ a {
 	padding-top: $inner-spacing;
 }
 
+.portfolio header {
+	h1 a {
+		color: #aaa;
+	}
+}
+
 header {
 	div {@include grid-row;}
 	padding-top: 50px;

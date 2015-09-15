@@ -1,3 +1,8 @@
+- name: artsy
+  type: Product Design
+  thumb: artsy-thumb.png
+  permalink: artsy
+  description: 'Product design for the Artsy app for iPhone and iPad'
 - name: google
   type: UX Design
   thumb: google-thumb.png
@@ -18,13 +23,8 @@
   thumb: doisneau-thumb.png
   permalink: doisneau
   description: Typesetting a biography of French photographer Robert Doisneau
-- name: alphabet
-  type: lettering
-  thumb: alphabet-thumb.png
-  permalink: alphabet
-  description: Selected lettering work from the past 3 years
-- name: picplum ixd
+- name: picplum
   type: Interaction Design
   thumb: picplumixd-thumb.png
-  permalink: picplum-interactions
+  permalink: picplum
   description: 'Designing user-facing <span class="amp">&amp;</span> developer-facing components of the Picplum website'

@@ -4,14 +4,19 @@ bodyclass: portfolio
 
 <section>
 	<div class="description">
-		<p>I interned at Google this past summer, working on the Google Search App for iOS with a team of excellent designers, researchers, and engineers. <em>(I'll share more screenshots and specifics about my work as the features I worked on get released!)</em></p>
-		<h3>Design</h3>
-		<p>The first month of my internship was spent designing a new onboarding flow, to match Google's new <%= link_to "material design", "http://www.google.com/design/spec/material-design/introduction.html" %> spec. I worked closely with other designers on our team, as well as some stakeholders in marketing, to develop a vibrant visual style that would clearly explain the important app features. The visual design I worked on heavily informed the animated onboarding flow that shipped to all users.</p>
-		<p>The rest of my internship was devoted to exploring higher-level questions about how users currently find information. I was able to work closely with other designers on my team, as well as the PM, tech lead, and engineers, to explore multiple interaction models for a core app feature. I produced a <em>ton</em> of mockups and flows (and a few interactive prototypes) to help communicate different models and their pros and cons to other members of the team.
-		<h3>Research</h3>
-		<p>Throughout the summer, I got to assist in multiple user studies that the search UX researchers ran. At the end of the summer, I assisted in a comprehensive study to measure the effectiveness of various interaction models I'd worked on earlier in the summer. I wrote a study script, observed participants, and summarized the findings and provided concrete design suggestions to the team.</p>
+		<p>I interned at Google doing interaction design for the <a href="https://itunes.apple.com/us/app/google/id284815942?mt=8">Google search app for iOS</a>. Over the summer, I worked on a major app navigation redesign, a user study to evaluate different app redesigns, and a new onboarding flow.</p>
+		<h3>Rethinking the app navigational model</h3>
+		<p>When I first joined the team, the Google search app only allowed users to keep only one search results page and one webpage open at at a time. I assisted in a redesign intended to allow for more flexible use of the app, so that users could multitask and easily refer to multiple webpages for information.</p>
+		<p>I mocked up example interfaces for three proposed app navigational models: one that made heavy use of a Chrome-like tabs model, one that prioritized users favoriting important webpages, and one that visualized the recent history of what the user had searched for, and what webpages they visited. For each model, I produced sample user flows to assist the team in comparing and contrasting which models were most efficient to use, most simple to use, and most power-user-friendly. I also developed interactive prototypes with Framer.js to test out common user actions (swiping, favoriting) for each model.</p>
+		<%= image_tag "google-recents.png" %>
+		<p>Towards the end of the summer, as the team converged on one navigational model (shown above) I wrote a user study to evaluate the navigational models we were considering for the app. We recruited 8 participants to try out prototype apps and engage in several information-finding tasks. I wrote a study summary report and offered design recommendations on what areas of the product worked well or needed improvement.</p>
+		<h3>A new material design onboarding flow</h3>
+		<p>To prepare for the launch of the material design language, I designed an onboarding flow to introduce new users to some key personalization features of the Google search app. Certain features highlighted in the onboarding flow (e.g. Google Now) were intended to encourage users to sign into their Google account, so the app could provide better personalized search results and Google Now content.</p>
+		<%= image_tag "google-onboarding.png" %>
+		<p>A new user would swipe through all three screens when first opening the app. Existing users who hadn't used certain features (or hadn't signed into their Google accounts within the app) would be shown a small "peek" of the onboarding flow to suggest a new feature to them. I designed approaches to showing this peek on the main app screen&mdash;the design on the left is the direction the team eventually chose.</p>
+		<%= image_tag "google-onboarding-tout.png" %>
 	</div>
 	<ul class="details">
 		<li><strong>Year</strong> Summer 2014</li>
 	</ul>
-<section
+</section>
