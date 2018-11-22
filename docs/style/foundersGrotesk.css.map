@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,UAOC;EANC,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,sHACyD;EAC9D,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;AAGtB,UAOC;EANC,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,kIAC+D;EACpE,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM",
+"sources": ["../../style/foundersGrotesk.scss"],
+"names": [],
+"file": "foundersGrotesk.css"
+}
