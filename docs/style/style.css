@@ -4,30 +4,35 @@
   font-weight: 500;
   font-style: normal;
   font-stretch: normal; }
+
 @font-face {
   font-family: 'Canela Web';
   src: url("type/Canela-Light-Web.woff2") format("woff2"), url("type/Canela-Light-Web.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-stretch: normal; }
+
 @font-face {
   font-family: 'Canela Web';
   src: url("type/Canela-LightItalic-Web.woff2") format("woff2"), url("type/Canela-LightItalic-Web.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-stretch: normal; }
+
 @font-face {
   font-family: 'Founders Grotesk Web';
   src: url("type/FoundersGroteskWeb-Medium.woff2") format("woff2"), url("type/FoundersGroteskWeb-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-stretch: normal; }
+
 @font-face {
   font-family: 'Founders Grotesk Web';
   src: url("type/FoundersGroteskWeb-MediumItalic.woff2") format("woff2"), url("type/FoundersGroteskWeb-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-stretch: normal; }
+
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -185,17 +190,15 @@ header {
 @media (max-width: 900px) {
   .intro {
     margin-right: 50px; }
-
   .excited {
     margin-left: 100px; }
-
   .cv {
     margin: 50px;
     max-width: 700px; } }
+
 @media (min-width: 900px) {
   body {
     margin: 0 auto 50px; }
-
   .content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -216,11 +219,11 @@ header {
       margin-right: auto;
       order: 3;
       width: 70%; } }
+
 @media (max-width: 500px) {
   header {
     margin-bottom: 30px;
     margin-top: 30px; }
-
   .intro {
     margin-right: 50px; }
     .intro .intro-about,
@@ -233,7 +236,6 @@ header {
     .intro .intro-email {
       font-size: 15px;
       margin-top: 40px; }
-
   .excited {
     margin-left: 30px;
     padding: 20px; }
@@ -244,7 +246,6 @@ header {
       font-size: 14px; }
     .excited .b {
       font-size: 16px; }
-
   .cv {
     margin: 30px 30px 40px; }
     .cv h2 {
@@ -255,6 +256,7 @@ header {
       line-height: 26px; }
     .cv .cv-previously {
       margin-top: 30px; } }
+
 @media (min-width: 500px) {
   .excited {
     padding: 30px; } }

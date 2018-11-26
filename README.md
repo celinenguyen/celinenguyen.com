@@ -1,5 +1,5 @@
-##### Notes to self
+### For developing
 
-- [ ] Set up SCSS pipeline. Currently just running `sass --watch source/style:docs/style` in another tab.
-- [ ] Set up typography pipeline. Currently, `style/type` doesn't automatically copy over.
-- [ ] Need to make a favicon
+- Run `eleventy --serve`
+- Run `npm run dev`
+- View at http://localhost:8080/

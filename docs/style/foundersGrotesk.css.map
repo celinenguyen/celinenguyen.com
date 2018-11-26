@@ -1,7 +1,9 @@
 {
-"version": 3,
-"mappings": "AAGA,UAOC;EANC,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,sHACyD;EAC9D,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;AAGtB,UAOC;EANC,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,kIAC+D;EACpE,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM",
-"sources": ["../../style/foundersGrotesk.scss"],
-"names": [],
-"file": "foundersGrotesk.css"
+	"version": 3,
+	"file": "foundersGrotesk.css",
+	"sources": [
+		"../../source/style/foundersGrotesk.scss"
+	],
+	"names": [],
+	"mappings": "AAGA,UAAU;EACR,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,2CAA2C,CAAC,eAAe,EAC3D,0CAA0C,CAAC,cAAc;EAC9D,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;;AAGtB,UAAU;EACR,WAAW,EAAE,sBAAsB;EACnC,GAAG,EAAE,iDAAiD,CAAC,eAAe,EACjE,gDAAgD,CAAC,cAAc;EACpE,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM"
 }
