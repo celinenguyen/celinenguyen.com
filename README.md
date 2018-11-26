@@ -6,4 +6,4 @@
 
 ### Todo items
 
--[ ] Color contrast on _I'm excited by_ doesn't pass WCAG color contrast guidelines (due to the multiply effect)
+- [ ] Color contrast on _I'm excited by_ doesn't pass WCAG color contrast guidelines (due to the multiply effect)
