@@ -3,13 +3,8 @@
   "version": "1.0.0",
   "description": "Portfolio-ish website for Celine Nguyen",
   "main": "index.js",
-  "//": "See https://github.com/npm/npm/issues/8918#issuecomment-328316465 re: licensing",
   "scripts": {
-    "build-task:scss-compile": "node-sass-chokidar --source-map true source/style/ -o docs/style",
-    "build-task:typefaces": "cp -r source/style/type docs/style/type",
-    "build-task:favicon": "cp source/favicon.ico docs/favicon.ico",
-    "build-task:favicon-large": "cp source/favicon-152.png docs/favicon-152.png",
-    "sass:build": "npm-run-all -p build-task:*",
+    "sass:build": "node-sass-chokidar --source-map true source/style/ -o docs/style",
     "sass:watch": "chokidar 'source/scss/**/*.scss' -c 'npm run sass:build'",
     "dev": "npm-run-all -p sass:*"
   },
@@ -19,6 +14,7 @@
   },
   "author": "Celine Nguyen <hello@celinenguyen.com>",
   "license": "UNLICENSED",
+  "//": "See https://github.com/npm/npm/issues/8918#issuecomment-328316465 re: licensing",
   "homepage": "https://celinenguyen.com",
   "dependencies": {
     "autoprefixer": "^9.7.3",
