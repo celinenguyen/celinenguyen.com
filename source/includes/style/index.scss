@@ -5,6 +5,19 @@
 .index-content {
   display: flex;
   flex-direction: column;
+
+  a {
+    border-bottom: 1px solid $navy;
+    color: $navy;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+
+    &:hover {
+      border-bottom: 1px solid $navy;
+    }
+  }
 }
 
 .index-intro,

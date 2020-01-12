@@ -5,7 +5,7 @@
     Céline Nguyen &mdash; Product Designer
   </title>
   <link href="/includes/style/style.css" rel="stylesheet">
-  {% if stylesheet|length %}
+  {% if stylesheet %}
     {% set stylesheetURL = "/includes/style/" + stylesheet + ".css" %}
     <link href={{ stylesheetURL }} rel="stylesheet">
   {% endif %}

@@ -36,6 +36,15 @@
 .index-content {
   display: flex;
   flex-direction: column; }
+  .index-content a {
+    border-bottom: 1px solid #0a4774;
+    color: #0a4774;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s; }
+    .index-content a:hover {
+      border-bottom: 1px solid #0a4774; }
 
 .index-intro,
 .index-excited,

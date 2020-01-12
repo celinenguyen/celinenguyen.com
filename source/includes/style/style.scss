@@ -5,6 +5,7 @@
 @import 'lyon';
 
 body {
+  @include typeface-lyon;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -12,31 +13,59 @@ body {
   p {
     margin: 0;
   }
-
-  a {
-    border-bottom: 1px solid $navy;
-    color: $navy;
-    line-height: 1.2;
-    text-align: center;
-    text-decoration: none;
-    transition: all .5s;
-
-    &:hover {
-      border-bottom: 1px solid $navy;
-    }
-  }
 }
 
 header {
-  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
 
-  h1 {
+  a {
+    text-decoration: none;
+  }
+
+  .header-logo,
+  .header-navigation {
+    display: inline-block;
+  }
+
+  .header-logo {
     @include typeface-founders-grotesk;
     color: $navy;
     font-size: 20px;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
+
+    a:link,
+    a:active,
+    a:visited {
+      color: $navy;
+    }
+
+    a:hover {
+      color: green;
+    }
+  }
+
+  .header-navigation {
+    list-style-type: none;
+
+    a:link,
+    a:active,
+    a:visited {
+      color: $navy;
+    }
+
+    a:hover {
+      color: green;
+      text-decoration: underline;
+    }
   }
 }
 

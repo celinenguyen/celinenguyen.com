@@ -1,0 +1,36 @@
+{
+  "Books2020": [
+      {
+        "title": "Winter",
+        "author": "Ali Smith",
+        "type": "Fiction",
+        "themes": ["Politics", "Environment", "Art"],
+        "cover": "winter.jpg"
+      },
+      {
+        "title": "What Goes Up",
+        "author": "Michael Sorkin",
+        "type": "Essays",
+        "themes": ["Architecture", "Urbanism", "Politics"],
+        "cover": "what-goes-up.jpg"
+      },
+      {
+        "title": "Kitchen",
+        "author": "Banana Yoshimoto",
+        "type": "Fiction",
+        "themes": ["Cooking", "Love", "Depression", "Translated (Japanese)"]
+      }
+    ],
+  "References2020": [
+    {
+      "title": "Five Seasons of Jam",
+      "author": "Lillie O'Brien",
+      "type": "Cookbook"
+    },
+    {
+      "title": "East",
+      "author": "Meera Sodha",
+      "type": "Cookbook"
+    }
+  ]
+}
