@@ -1,12 +1,14 @@
 <header>
-  <h1><a href="/">Celine Nguyen</a></h1>
-  <ul>
-    {% for nav in collections.nav %}
-      <li>
-        <a href="{{ nav.url | url }}" {% if nav.url == page.url %} data-current="current item"{% endif %}>
-          {{ nav.data.navtitle }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="header-wrapper">
+    <h1 class="header-logo"><a href="/">Celine Nguyen</a></h1>
+    <ul class="header-navigation">
+      {% for nav in collections.nav %}
+        <li>
+          <a href="{{ nav.url | url }}" {% if nav.url == page.url %} data-current="current item"{% endif %}>
+            {{ nav.data.navtitle }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </header>
