@@ -1,25 +1,7 @@
-<!doctype html>
-<html  lang="en">
-	<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
-    Céline Nguyen &mdash; Product Designer
-  </title>
-  <link href="includes/style/style.css" rel="stylesheet">
-  <!-- see: https://github.com/audreyr/favicon-cheat-sheet -->
-  <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
-</head>
-
-
-	<body>
-    <header>
-  <h1>Celine Nguyen</h1>
-</header>
-
-
-		<main>
-			
+---
+layout: layouts/index.njk
+permalink: /
+---
 
 <div class="content">
   <section class="intro">
@@ -32,68 +14,16 @@
   <section class="excited">
     <h2 class="excited-open">I'm very excited about</h2>
     <p class="excited-list">
-      
-        
-          <span class="a">Interdisciplinary endeavors</span>
-        
-        
+      {% for e in ExcitedBy %}
+        {% if loop.index is odd %}
+          <span class="a">{{ e }}</span>
+        {% else %}
+          <span class="b">{{ e }}</span>
+        {% endif %}
+        {% if not loop.last %}
           <span class="divider">/</span>
-        
-      
-        
-          <span class="b">Technology and ethics</span>
-        
-        
-          <span class="divider">/</span>
-        
-      
-        
-          <span class="a">Cultivating online communities</span>
-        
-        
-          <span class="divider">/</span>
-        
-      
-        
-          <span class="b">Inclusive mentorship</span>
-        
-        
-          <span class="divider">/</span>
-        
-      
-        
-          <span class="a">Fashion and beauty</span>
-        
-        
-          <span class="divider">/</span>
-        
-      
-        
-          <span class="b">Gender performance</span>
-        
-        
-          <span class="divider">/</span>
-        
-      
-        
-          <span class="a">Reading books, not feeds</span>
-        
-        
-          <span class="divider">/</span>
-        
-      
-        
-          <span class="b">Calligraphy</span>
-        
-        
-          <span class="divider">/</span>
-        
-      
-        
-          <span class="a">The resurgence of physical crafts in a digital age</span>
-        
-        
-      
+        {% endif %}
+      {% endfor %}
     </p>
     <h2 class="excited-close">so feel free to talk to me about these things</h2>
   </section>
@@ -108,9 +38,3 @@
     </section>
   </section>
 </div>
-
-
-		</main>
-
-	</body>
-</html>
