@@ -1,0 +1,96 @@
+@import 'foundersGrotesk';
+
+$book-shadow-exterior-color: rgba(0, 0, 0, .2);
+$book-spine-black-invisible: rgba(0, 0, 0, 0);
+$book-spine-black-translucent: rgba(0, 0, 0, .1);
+$book-spine-black-translucent-strong: rgba(0, 0, 0, .3);
+$book-spine-white: rgba(255, 255, 255, .3);
+
+.reading main {
+  margin-top: 100px;
+}
+
+.reading-list {
+  align-items: stretch;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.reading-list-book {
+  // border: 1px solid red;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+// Book cover styling from https://www.sternberg-press.com/product/design-by-accident/
+.reading-list-book-cover {
+  box-shadow: -.1rem 0 .5rem 0 $book-shadow-exterior-color;
+  display: inline-block;
+  margin-right: 20%;
+  max-width: 80%;
+  position: relative;
+
+  &::before {
+    background: linear-gradient(to left, $book-spine-black-invisible 0%, $book-spine-black-translucent-strong 90%);
+    border-radius: 3px 2px 2px 3px;
+    box-shadow: 1px 0 $book-spine-black-translucent, 2px 0 0 $book-spine-white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 5px;
+    z-index: 2;
+  }
+
+  img {
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.reading-list-book-title,
+.reading-list-book-author {
+  margin-right: 20%;
+}
+
+.reading-list-book-title {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.reading-list-book-author {
+  @include typeface-founders-grotesk;
+  font-size: 15px;
+  letter-spacing: .2px;
+  margin-top: 5px;
+}
+
+@media (min-width: 450px) {
+  .reading-list-book {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  .reading-list-book {
+    flex-basis: 33.33%;
+  }
+}
+
+@media (min-width: 900px) {
+  .reading-list-book {
+    flex-basis: 25%;
+  }
+}

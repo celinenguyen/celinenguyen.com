@@ -2,7 +2,7 @@
 @import 'canela';
 @import 'foundersGrotesk';
 
-.index-content {
+.index-wrapper {
   display: flex;
   flex-direction: column;
 
@@ -47,7 +47,7 @@
   .index-intro-about {
     @include typeface-canela;
     color: $navy;
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: .5px;
     line-height: 50px;
     padding-top: 50px;
@@ -176,6 +176,11 @@
 }
 
 @media (max-width: 900px) {
+  .index main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .index-intro {
     margin-right: 50px;
   }
@@ -191,13 +196,9 @@
 }
 
 @media (min-width: 900px) {
-  .index-content {
+  .index-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
 
     .index-intro {
       flex-basis: 60%;

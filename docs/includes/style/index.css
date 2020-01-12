@@ -33,17 +33,17 @@
   font-style: italic;
   font-stretch: normal; }
 
-.index-content {
+.index-wrapper {
   display: flex;
   flex-direction: column; }
-  .index-content a {
+  .index-wrapper a {
     border-bottom: 1px solid #0a4774;
     color: #0a4774;
     line-height: 1.2;
     text-align: center;
     text-decoration: none;
     transition: all .5s; }
-    .index-content a:hover {
+    .index-wrapper a:hover {
       border-bottom: 1px solid #0a4774; }
 
 .index-intro,
@@ -70,7 +70,7 @@
     font-style: normal;
     font-stretch: normal;
     color: #0a4774;
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: .5px;
     line-height: 50px;
     padding-top: 50px; }
@@ -170,6 +170,9 @@
     margin-top: 40px; }
 
 @media (max-width: 900px) {
+  .index main {
+    margin-left: 0;
+    margin-right: 0; }
   .index-intro {
     margin-right: 50px; }
   .index-excited {
@@ -179,21 +182,17 @@
     max-width: 700px; } }
 
 @media (min-width: 900px) {
-  .index-content {
+  .index-wrapper {
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px; }
-    .index-content .index-intro {
+    flex-wrap: wrap; }
+    .index-wrapper .index-intro {
       flex-basis: 60%;
       order: 1; }
-    .index-content .index-cv {
+    .index-wrapper .index-cv {
       flex-basis: 40%;
       order: 2;
       padding-left: 40px; }
-    .index-content .index-excited {
+    .index-wrapper .index-excited {
       align-self: flex-end;
       margin-left: auto;
       margin-right: auto;

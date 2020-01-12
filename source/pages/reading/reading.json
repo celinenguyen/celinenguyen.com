@@ -18,7 +18,8 @@
         "title": "Kitchen",
         "author": "Banana Yoshimoto",
         "type": "Fiction",
-        "themes": ["Cooking", "Love", "Depression", "Translated (Japanese)"]
+        "themes": ["Cooking", "Love", "Depression", "Translated (Japanese)"],
+        "cover": "kitchen.png"
       }
     ],
   "References2020": [

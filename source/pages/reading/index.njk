@@ -13,32 +13,23 @@ stylingClass: reading
   Some introduction here.
 </p>
 
-<p>
-  Legend: <s>Not recommended</s>, * Highly recommended
-</p>
-
 <section class="reading-2020">
-  <h2>2020</h2>
-    <h3>Books</h3>
-    <ol>
-      {% for book in Books2020 %}
-        <li>
-          <span class="book-title">
-            <em>{{ book.title }}</em>
-          </span>
-          <span class="book-author">
-            {{ book.author }}
-          </span>
-          {% if book.cover %}
+  <ol class="reading-list">
+    {% for book in Books2020 %}
+      <li class="reading-list-book">
+        {% if book.cover %}
+          <div class="reading-list-book-cover">
             {% set coverURL = "/reading/covers/" + book.cover %}
             <img src={{ coverURL }}>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ol>
-
-    <h3>References</h3>
-  <ul>
+          </div>
+        {% endif %}
+        <div class="reading-list-book-title">
+          <em>{{ book.title }}</em>
+        </div>
+        <div class="reading-list-book-author">
+          {{ book.author }}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
 </section>
-
-<h2>2019</h2>

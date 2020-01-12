@@ -54,9 +54,12 @@ body {
   font-stretch: normal;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
   margin: 0; }
   body p {
     margin: 0; }
+  body img {
+    max-width: 100%; }
 
 header {
   display: flex;
@@ -64,7 +67,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 30px auto;
-  max-width: 1200px;
+  max-width: 1000px;
   padding-left: 50px;
   padding-right: 50px; }
   header a {
@@ -76,7 +79,7 @@ header {
     font-family: 'Founders Grotesk Web', 'Helvetica', -apple-system, 'Arial', sans-serif;
     font-weight: 500;
     color: #0a4774;
-    font-size: 20px;
+    font-size: 17px;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase; }
@@ -95,6 +98,13 @@ header {
     header .header-navigation a:hover {
       color: green;
       text-decoration: underline; }
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  padding-left: 50px;
+  padding-right: 50px; }
 
 @media (min-width: 900px) {
   body {
