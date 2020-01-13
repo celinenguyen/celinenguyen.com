@@ -9,8 +9,15 @@ stylesheet: reading
 stylingClass: reading
 ---
 
+<h1>
+  What I've read
+  <a href="" class="read-this-year">this year</a>
+  <span class="divider">/</span>
+  <a href="" class="read-overall">overall</a>
+</h1>
+
 <p>
-  Some introduction here.
+  Brief reviews of what I've read in 2020. This year, I'm particularly interested in reading nonfiction about: urbanism, the environment. For fiction: contemporary writers in the U.K., some more things to write here…
 </p>
 
 <section class="reading-2020">
@@ -24,11 +31,18 @@ stylingClass: reading
           </div>
         {% endif %}
         <div class="reading-list-book-title">
-          <em>{{ book.title }}</em>
+          {{ book.title }}
         </div>
+        {% if book.author != "Various" %}
         <div class="reading-list-book-author">
           {{ book.author }}
         </div>
+        {% endif %}
+        {% if book.summary %}
+        <p class="reading-list-book-summary">
+          {{ book.summary }}
+        </p>
+        {% endif %}
       </li>
     {% endfor %}
   </ol>

@@ -6,7 +6,8 @@
         "type": "Fiction",
         "themes": ["Politics", "Environment", "Art"],
         "read": ["2020"],
-        "cover": "winter.jpg"
+        "cover": "winter.jpg",
+        "summary": "A luminous and joyful book, deeply rooted in contemporary British politics, art, and a reverence for nature. The second in Smith's seasonal quartet (but it stands beautifully alone)."
       },
       {
         "title": "What Goes Up",
@@ -14,7 +15,8 @@
         "type": "Essays",
         "themes": ["Architecture", "Urbanism", "Politics"],
         "read": ["2020"],
-        "cover": "what-goes-up.jpg"
+        "cover": "what-goes-up.jpg",
+        "summary": "Sorkin is eloquent, entertainingly scathing (to the powerful), and empathetic (to the people). For those who love cities, public spaces, social housing, architecture, and Jane Jacobs."
       },
       {
         "title": "Kitchen",
@@ -22,7 +24,8 @@
         "type": "Fiction",
         "themes": ["Cooking", "Love", "Depression", "Translated (Japanese)"],
         "read": ["2020"],
-        "cover": "kitchen.png"
+        "cover": "kitchen.png",
+        "summary": "A curious, wise, and infinitely kind novella on the tenderness of love, care, and losing loved ones. Also thrilling: an appreciation for food and explorations of gender roles."
       }
     ],
   "References2020": [
