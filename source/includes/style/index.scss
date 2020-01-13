@@ -1,0 +1,286 @@
+@import 'variables';
+@import 'canela';
+@import 'foundersGrotesk';
+
+.index-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    border-bottom: 1px solid $navy;
+    color: $navy;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+
+    &:hover {
+      border-bottom: 1px solid $navy;
+    }
+  }
+}
+
+.index-intro,
+.index-excited,
+.index-cv {
+  box-sizing: border-box;
+}
+
+.index-intro {
+  position: relative;
+
+  .index-intro-color {
+    background-color: $lavender;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .index-intro-about,
+  .index-intro-email {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .index-intro-about {
+    @include typeface-canela;
+    color: $navy;
+    font-size: 28px;
+    letter-spacing: .5px;
+    line-height: 50px;
+    padding-top: 50px;
+
+    a {
+      letter-spacing: normal;
+      padding: 4px 2px 0;
+    }
+
+    a:hover {
+      background-color: rgba($white, .5);
+    }
+  }
+
+  .index-intro-email {
+    @include typeface-founders-grotesk;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 150px;
+    margin-top: 50px;
+
+    a {
+      border-bottom-color: $lavender;
+    }
+
+    a:hover {
+      border-bottom-color: $navy;
+    }
+  }
+
+}
+
+.index-excited {
+  background-color: $persimmon;
+  color: $white;
+  margin-top: -100px;
+  mix-blend-mode: multiply;
+
+  .index-excited-open,
+  .index-excited-close {
+    @include typeface-founders-grotesk;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .index-excited-close {
+    text-align: right;
+  }
+
+  .index-excited-list {
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .index-excited-a,
+  .index-excited-b,
+  .index-excited-divider {
+    line-height: 30px;
+  }
+
+  .index-excited-divider {
+    @include typeface-canela;
+  }
+
+  .index-excited-a,
+  .index-excited-b {
+    text-transform: uppercase;
+  }
+
+  .index-excited-a {
+    @include typeface-canela;
+    font-size: 15px;
+    font-weight: $weight-medium;
+    letter-spacing: .75px;
+  }
+
+  .index-excited-b {
+    @include typeface-founders-grotesk;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.index-cv {
+  color: $navy;
+
+  h2 {
+    @include typeface-founders-grotesk;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  p {
+    @include typeface-canela;
+    font-size: 18px;
+    letter-spacing: .3px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  a {
+    letter-spacing: normal;
+    padding: 2px 2px 0;
+
+    &:hover {
+      background-color: $lavender;
+    }
+  }
+
+  time {
+    @include typeface-founders-grotesk;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .index-cv-previously {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .index main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .index-intro {
+    margin-right: 50px;
+  }
+
+  .index-excited {
+    margin-left: 100px;
+  }
+
+  .index-cv {
+    margin: 50px;
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 900px) {
+  .index-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .index-intro {
+      flex-basis: 60%;
+      order: 1;
+    }
+
+    .index-cv {
+      flex-basis: 40%;
+      order: 2;
+      padding-left: 40px;
+    }
+
+    .index-excited {
+      align-self: flex-end;
+      margin-left: auto;
+      margin-right: auto;
+      order: 3;
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .index-intro {
+    margin-right: 50px;
+
+    .index-intro-about,
+    .index-intro-email {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .index-intro-about {
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    .index-intro-email {
+      font-size: 15px;
+      margin-top: 40px;
+    }
+  }
+
+  .index-excited {
+    margin-left: 30px;
+    padding: 20px;
+
+    .index-excited-close {
+      margin-left: auto;
+      width: 60%;
+    }
+
+    .index-excited-a {
+      font-size: 14px;
+    }
+
+    .index-excited-b {
+      font-size: 16px;
+    }
+  }
+
+  .index-cv {
+    margin: 30px 30px 40px;
+
+    h2 {
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .index-cv-previously {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .index-excited {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+title: "What I'm Reading"
+tags:
+  - nav
+navtitle: Reading
+permalink: /reading/index.html
+stylesheet: reading
+stylingClass: reading
+---
+
+<p>
+  Some introduction here.
+</p>
+
+<section class="reading-2020">
+  <ol class="reading-list">
+    {% for book in Books2020 %}
+      <li class="reading-list-book">
+        {% if book.cover %}
+          <div class="reading-list-book-cover">
+            {% set coverURL = "/reading/covers/" + book.cover %}
+            <img src={{ coverURL }}>
+          </div>
+        {% endif %}
+        <div class="reading-list-book-title">
+          <em>{{ book.title }}</em>
+        </div>
+        <div class="reading-list-book-author">
+          {{ book.author }}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</section>

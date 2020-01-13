@@ -1,0 +1,27 @@
+// License: 2001-FFAELN
+// http://commercialtype.com/eula
+
+@font-face {
+  font-family: 'Lyon Text Web';
+  src: url('LyonText-Regular-Web.woff2') format('woff2'),
+       url('LyonText-Regular-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Lyon Text Web';
+  src: url('LyonText-RegularItalic-Web.woff2') format('woff2'),
+       url('LyonText-RegularItalic-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@mixin typeface-lyon {
+  font-family: 'Lyon Text Web', 'Georgia', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}

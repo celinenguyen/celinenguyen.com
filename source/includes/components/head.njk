@@ -4,7 +4,11 @@
   <title>
     Céline Nguyen &mdash; Product Designer
   </title>
-  <link href="includes/style/style.css" rel="stylesheet">
+  <link href="/includes/style/style.css" rel="stylesheet">
+  {% if stylesheet %}
+    {% set stylesheetURL = "/includes/style/" + stylesheet + ".css" %}
+    <link href={{ stylesheetURL }} rel="stylesheet">
+  {% endif %}
   <!-- see: https://github.com/audreyr/favicon-cheat-sheet -->
   <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
 </head>

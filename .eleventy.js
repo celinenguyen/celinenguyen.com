@@ -5,6 +5,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("source/CNAME");
   eleventyConfig.addPassthroughCopy("source/includes/style/type");
 
+  eleventyConfig.addPassthroughCopy({ "source/pages/reading/covers": "reading/covers" });
+
   return {
     templateFormats: ["html", "njk", "md"],
     markdownTemplateEngine: "njk",

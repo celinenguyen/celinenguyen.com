@@ -1,0 +1,261 @@
+{
+  "Books2020": [
+      {
+        "title": "Winter",
+        "author": "Ali Smith",
+        "type": "Fiction",
+        "themes": ["Politics", "Environment", "Art"],
+        "read": ["2020"],
+        "cover": "winter.jpg"
+      },
+      {
+        "title": "What Goes Up",
+        "author": "Michael Sorkin",
+        "type": "Essays",
+        "themes": ["Architecture", "Urbanism", "Politics"],
+        "read": ["2020"],
+        "cover": "what-goes-up.jpg"
+      },
+      {
+        "title": "Kitchen",
+        "author": "Banana Yoshimoto",
+        "type": "Fiction",
+        "themes": ["Cooking", "Love", "Depression", "Translated (Japanese)"],
+        "read": ["2020"],
+        "cover": "kitchen.png"
+      }
+    ],
+  "References2020": [
+    {
+      "title": "Five Seasons of Jam",
+      "author": "Lillie O'Brien",
+      "type": "Cookbook"
+    },
+    {
+      "title": "East",
+      "author": "Meera Sodha",
+      "type": "Cookbook"
+    }
+  ],
+  "AllBooks": [
+    {
+      "title": "Draft No. 4: On the Writing Process",
+      "author": "John McPhee",
+      "type": "Nonfiction",
+      "themes": ["Writing", "Advice"],
+      "read": ["2019"]
+    },
+    {
+      "title": "The Language of Things: Understanding the World of Desirable Objects",
+      "author": "Deyan Sudjic",
+      "type": "",
+      "themes": ["Design"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Conversations with Friends",
+      "author": "Sally Rooney",
+      "type": "Fiction",
+      "themes": [],
+      "read": ["2019"]
+    },
+    {
+      "title": "The Idiot",
+      "author": "Elif Batuman",
+      "type": "Fiction",
+      "themes": [],
+      "read": ["2019"]
+    },
+    {
+      "title": "A Thousand Beginnings and Endings",
+      "author": "Various",
+      "editor": ["Ellen Oh", "Elsie Chapman"],
+      "type": "Fiction",
+      "themes": [],
+      "read": ["2019"]
+    },
+    {
+      "title": "Ways of Curating",
+      "author": "Hans Ulrich Oberst",
+      "type": "Nonfiction",
+      "themes": ["Art"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Working: Researching, Interviewing, Writing",
+      "author": "Robert A. Caro",
+      "type": "Nonfiction",
+      "themes": ["Writing"],
+      "read": ["2019"]
+    },
+    {
+      "title": "My Year of Rest and Relaxation",
+      "author": "Otessa Moshfegh",
+      "type": "Fiction",
+      "themes": ["Mental Health", "Gender"],
+      "read": ["2019"]
+    },
+    {
+      "title": "The Collected Schizophrenias",
+      "author": "Esmé Weijun Wang",
+      "type": "Nonfiction",
+      "themes": ["Mental Health"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Exhalation: Stories",
+      "author": "Ted Chiang",
+      "type": "Fiction",
+      "themes": ["Technology", "Science"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Asians Wear Clothes on the Internet: Race, Gender, and the Work of Personal Style Blogging",
+      "author": "Minh-Ha T. Pham",
+      "type": "Nonfiction",
+      "themes": ["Fashion", "Race", "Gender", "Technology"],
+      "read": ["2019"]
+    },
+    {
+      "title": "The Third Plate: Field Notes on the Future of Food",
+      "author": "Dan Barber",
+      "type": "Nonfiction",
+      "themes": ["Food", "Environment"],
+      "read": ["2019"]
+    },
+    {
+      "title": "How to Do Nothing",
+      "author": "Jenny Odell",
+      "type": "Nonfiction",
+      "themes": ["Technology", "Environment", "Mental Health"],
+      "read": ["2019"]
+    },
+    {
+      "title": "100 Chairs in 100 Days in Its 100 Ways",
+      "author": "Martino Gamper",
+      "type": "Nonfiction",
+      "themes": ["Design"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Darwin Comes to Town: How the Urban Jungle Drives Evolution",
+      "author": "Menno Schilthuizen",
+      "type": "Nonfiction",
+      "themes": ["Science", "Urbanism"],
+      "read": ["2019"]
+    },
+    {
+      "title": "The White Album: Essays",
+      "author": "Joan Didion",
+      "type": "Nonfiction",
+      "themes": ["Culture"],
+      "read": ["2019"]
+    },
+    {
+      "title": "The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power",
+      "author": "Shoshana Zuboff",
+      "type": "Nonfiction",
+      "themes": ["Technology", "Economics", "Politics"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Women in Clothes: Why We Wear What we Wear",
+      "author": "Various",
+      "editor": ["Heidi Julavits", "Leanne Shapton", "Sheila Heti"],
+      "type": "",
+      "themes": ["Fashion", "Gender"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Pedagogy of the Oppressed",
+      "author": "Paolo Freire",
+      "type": "Nonfiction",
+      "themes": ["Politics"],
+      "read": ["2019"]
+    },
+    {
+      "title": "A Monk's Guide to a Clean House and Mind",
+      "author": "Shoukei Matsumoto",
+      "type": "Nonfiction",
+      "themes": ["Advice"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Fashion Climbing: A Memoir with Photographs",
+      "author": "Bill Cunningham",
+      "type": "Nonfiction",
+      "themes": ["Fashion", "Photography"],
+      "read": ["2019"]
+    },
+    {
+      "title": "How to Change Your Mind",
+      "author": "Michael Pollan",
+      "type": "Nonfiction",
+      "themes": ["Science", "Culture"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Too Much and Not the Mood: Essays",
+      "author": "Durga Chew-Bose",
+      "type": "Nonfiction",
+      "themes": [],
+      "read": ["2019"]
+    },
+    {
+      "title": "Ninth Street Women: Lee Krasner, Elaine de Kooning, Grace Hartigan, Joan Mitchell, and Helen Frankenthaler: Five Painters and the Movement That Changed Modern Art",
+      "author": "Mary Gabriel",
+      "type": "Nonfiction",
+      "themes": ["Art", "History", "Gender"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Making Home: Adapting Our Homes and Our Lives to Settle in Place",
+      "author": "Mary Gabriel",
+      "type": "Nonfiction",
+      "themes": ["Living", "Environment", "Advice"],
+      "read": ["2019"]
+    },
+    {
+      "title": "B is for Bauhaus",
+      "author": "Deyan Sudjic",
+      "type": "Nonfiction",
+      "themes": ["Design", "Architecture", "Technology", "Culture"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Ten Arguments for Deleting Your Social Media Accounts Right Now",
+      "author": "Jaron Lanier",
+      "type": "Nonfiction",
+      "themes": ["Technology", "Advice"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+      "author": "James Clear",
+      "type": "Nonfiction",
+      "themes": ["Advice"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Bullshit Jobs: A Theory",
+      "author": "David Graeber",
+      "type": "Nonfiction",
+      "themes": ["Economics", "Politics"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Talking to My Daughter About the Economy: or, How Capitalism Works - and How It Fails",
+      "author": "Yanis Varoufakis",
+      "type": "Nonfiction",
+      "themes": ["Economics", "Politics"],
+      "read": ["2019"]
+    },
+    {
+      "title": "Art and Fear: Observations on the Perils (and Rewards) of Artmaking",
+      "author": "David Bayles",
+      "type": "Nonfiction",
+      "themes": ["Art", "Writing", "Advice"],
+      "read": ["2019"]
+    }
+  ]
+}
