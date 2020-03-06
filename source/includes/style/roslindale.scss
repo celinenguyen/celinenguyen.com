@@ -1,0 +1,28 @@
+// https://v-fonts.com/fonts/roslindale-variable-italic
+
+@font-face {
+  font-family: 'Roslindale';
+  src: url('type/RoslindaleVariableItalicBeta.woff2') format('woff2'),
+       url('type/RoslindaleVariableItalicBeta.woff') format('woff');
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+}
+
+// @font-face {
+//   font-family: 'Roslindale';
+//   src: url('type/RoslindaleDisplayCondensed-Regular.eot'); // IE < 9
+//   src: url('type/RoslindaleDisplayCondensed-Regular.eot?#') format('embedded-opentype'), // IE 9
+//        url('fonts/RoslindaleDisplayCondensed-Regular.woff2') format('woff2'),
+//        url('fonts/RoslindaleDisplayCondensed-Regular.woff') format('woff');
+//   font-stretch: condensed;
+//   font-style: normal;
+//   font-weight: 500;
+// }
+
+@mixin typeface-roslindale {
+  font-family: 'Roslindale', 'Garamond', 'Baskerville', serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+}

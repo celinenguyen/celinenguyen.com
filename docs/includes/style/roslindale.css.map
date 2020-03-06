@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "roslindale.css",
+	"sources": [
+		"../../../source/includes/style/roslindale.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,UAAU;EACR,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,8CAA8C,CAAC,eAAe,EAC9D,6CAA6C,CAAC,cAAc;EACjE,YAAY,EAAE,MAAM;EACpB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG"
+}

@@ -2,7 +2,32 @@ $lavender: #f3dcf0;
 $persimmon: #f04646;
 $navy: #0a4774;
 $white: #fff;
+$black: #000;
 
 $weight-light: 300;
 $weight-regular: 400;
 $weight-medium: 500;
+
+@mixin typeface-sf-ui {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+// https://css-tricks.com/snippets/sass/tint-shade-functions/
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix($white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix($black, $color, $percentage);
+}

@@ -1,0 +1,28 @@
+@import 'roslindale';
+@import 'variables';
+
+
+body.notes {
+  background-color: tint($lavender, 90%);
+  color: darken($persimmon, 30%);
+  @mixin typeface-sf-ui;
+
+
+  .header-logo a,
+  .header-navigation a {
+    color: darken($lavender, 30%);
+  }
+
+  main {
+    h1 {
+      @include typeface-roslindale;
+      font-variation-settings: 'ital' .7, 'slnt' 0;
+      font-size: 4em;
+      color: $persimmon;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+  }
+}
