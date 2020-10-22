@@ -2,7 +2,7 @@
 
 - Run `eleventy --serve`
 - Run `npm run dev`
-- View at http://localhost:8080/
+- View at http://localhost:8081/
 
 ### Todo items
 
