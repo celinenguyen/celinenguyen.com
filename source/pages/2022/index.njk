@@ -1,0 +1,23 @@
+---
+layout: layouts/index.njk
+permalink: 2022/
+stylingClass: mmxxii
+---
+
+<h3>My 2022 resolutions</h3>
+<ul class="whats-in">
+  {% for i in In %}
+  <li>{{ i }}</li>
+  {% endfor %}
+</ul>
+
+<h3>Out and In</h3>
+<table>
+  {% for r in OutAndIn %}
+  <tr>
+    {% for i in r %}
+    <td>{{ i }}</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
