@@ -1,9 +1,1 @@
-{
-	"version": 3,
-	"file": "canela.css",
-	"sources": [
-		"../../../source/includes/style/canela.scss"
-	],
-	"names": [],
-	"mappings": "AAGA,UAAU;EACR,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,mCAAmC,CAAC,eAAe,EACnD,kCAAkC,CAAC,cAAc;EACtD,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;;AAGtB,UAAU;EACR,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,kCAAkC,CAAC,eAAe,EAClD,iCAAiC,CAAC,cAAc;EACrD,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;;AAGtB,UAAU;EACR,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,wCAAwC,CAAC,eAAe,EACxD,uCAAuC,CAAC,cAAc;EAC3D,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM"
-}
+{"version":3,"sourceRoot":"","sources":["../../../source/includes/style/canela.scss"],"names":[],"mappings":"AAGA;EACE;EACA;EAEA;EACA;EACA;;AAGF;EACE;EACA;EAEA;EACA;EACA;;AAGF;EACE;EACA;EAEA;EACA;EACA","file":"canela.css"}
