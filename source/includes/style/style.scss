@@ -174,8 +174,8 @@ header {
     @include typeface-founders-grotesk;
     font-size: 14px;
     letter-spacing: 1px;
-    line-height: 40px;
-    margin: 0;
+    line-height: 1;
+    margin: 0 0 10px 0;
     text-transform: uppercase;
   }
 
@@ -203,7 +203,7 @@ header {
   }
 
   .cv-previously {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
