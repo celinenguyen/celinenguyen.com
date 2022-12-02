@@ -1,6 +1,6 @@
 ### For developing
 
-- Run `eleventy --serve`
+- Run `npx @11ty/eleventy --serve`
 - Run `npm run dev`
 - View at http://localhost:8081/
 
