@@ -42,12 +42,13 @@ body p {
   margin: 0;
 }
 body a {
-  border-bottom: 1px solid #0a4774;
+  /* 0a4774 = rgba(10,71,116,1)*/
+  border-bottom: 1px solid rgba(10,71,116,0.3);
   color: #0a4774;
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 body a:hover {
   border-bottom: 1px solid #0a4774;
@@ -80,6 +81,11 @@ header h1 {
 .intro {
   position: relative;
 }
+
+.intro-faded {
+  opacity: 0.7;
+}
+
 .intro .intro-color {
   background-color: #f3dcf0;
   height: 100%;
@@ -208,7 +214,7 @@ header h1 {
   padding: 2px 2px 0;
 }
 .cv a:hover {
-  background-color: #f3dcf0;
+  /* background-color: #f3dcf0; */
 }
 .cv time {
   font-family: "Founders Grotesk Web", "Helvetica", -apple-system, "Arial", sans-serif;
