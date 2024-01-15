@@ -42,13 +42,12 @@ body p {
   margin: 0;
 }
 body a {
-  /* 0a4774 = rgba(10,71,116,1)*/
-  border-bottom: 1px solid rgba(10,71,116,0.3);
+  border-bottom: 1px solid #0a4774;
   color: #0a4774;
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 body a:hover {
   border-bottom: 1px solid #0a4774;
@@ -81,11 +80,6 @@ header h1 {
 .intro {
   position: relative;
 }
-
-.intro-faded {
-  opacity: 0.7;
-}
-
 .intro .intro-color {
   background-color: #f3dcf0;
   height: 100%;
@@ -95,7 +89,8 @@ header h1 {
   z-index: -1;
 }
 .intro .intro-about,
-.intro .intro-email {
+.intro .intro-email,
+.intro .intro-social {
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -117,19 +112,35 @@ header h1 {
 .intro .intro-about a:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.intro .intro-email {
+.intro .intro-email,
+.intro .intro-social {
   font-family: "Founders Grotesk Web", "Helvetica", -apple-system, "Arial", sans-serif;
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 1px;
-  margin-bottom: 150px;
-  margin-top: 50px;
 }
-.intro .intro-email a {
+.intro .intro-email a,
+.intro .intro-social a {
   border-bottom-color: #f3dcf0;
 }
-.intro .intro-email a:hover {
+.intro .intro-email a:hover,
+.intro .intro-social a:hover {
   border-bottom-color: #0a4774;
+}
+.intro .intro-email {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.intro .intro-social {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 150px;
+}
+.intro .intro-social .intro-social-divider {
+  font-size: 0.6em;
+  opacity: 0.7;
 }
 
 .excited {
@@ -204,9 +215,9 @@ header h1 {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  font-size: 18px;
-  letter-spacing: 0.3px;
-  line-height: 30px;
+  font-size: 17px;
+  letter-spacing: 0.1px;
+  line-height: 28px;
   margin: 0;
 }
 .cv a {
@@ -214,7 +225,7 @@ header h1 {
   padding: 2px 2px 0;
 }
 .cv a:hover {
-  /* background-color: #f3dcf0; */
+  background-color: #f3dcf0;
 }
 .cv time {
   font-family: "Founders Grotesk Web", "Helvetica", -apple-system, "Arial", sans-serif;
@@ -280,7 +291,8 @@ header h1 {
     margin-right: 50px;
   }
   .intro .intro-about,
-.intro .intro-email {
+.intro .intro-email,
+.intro .intro-social {
     margin-left: 30px;
     margin-right: 30px;
   }

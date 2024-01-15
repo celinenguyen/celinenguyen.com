@@ -1,8 +1,8 @@
 ### For developing
 
 - Run `npx @11ty/eleventy --serve`
-- Run `npm run dev`
-- View at http://localhost:8081/
+- Run `npm run watch:sass`
+- View at http://localhost:8080/
 
 ### Todo items
 
