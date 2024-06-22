@@ -15,6 +15,7 @@
   "//": "See https://github.com/npm/npm/issues/8918#issuecomment-328316465 re: licensing",
   "homepage": "https://celinenguyen.com",
   "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "sass": "^1.45.2"
   }
 }
