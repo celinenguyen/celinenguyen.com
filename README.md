@@ -1,6 +1,5 @@
 ### For developing
 
-- Go to `cd Dropbox/Index/W/Web/celinenguyen.com/`
 - Run `npx @11ty/eleventy --serve`
 - Run `npm run watch:sass`
 - View at http://localhost:8080/
