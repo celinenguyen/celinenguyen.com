@@ -112,7 +112,7 @@ header {
   }
 
   .intro-email {
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 20px;
   }
   .intro-social {
@@ -260,6 +260,10 @@ header {
     .intro {
       flex-basis: 60%;
       order: 1;
+
+      .intro-about {
+        margin-right: 100px;
+      }
     }
 
     .cv {
