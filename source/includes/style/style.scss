@@ -291,11 +291,6 @@ header {
   .intro {
     margin-right: 50px;
 
-    .intro-color {
-      // changed my mind!
-      // width: 85%;
-    }
-
     .intro-about,
     .intro-email,
     .intro-social {
@@ -315,7 +310,14 @@ header {
   }
 
   .excited {
-    padding: 40px;
+    margin-top: -120px;
+    margin-left: 60px;
+    padding: 30px;
+
+    .excited-list {
+      margin: 30px auto;
+      text-align: left !important;
+    }
 
     .excited-close {
       margin-left: auto;
@@ -332,7 +334,7 @@ header {
   }
 
   .cv {
-    margin: 30px 30px 40px;
+    margin: 20px 30px 20px;
     padding: 30px;
 
     h2 {
