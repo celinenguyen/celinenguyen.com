@@ -1,3 +1,6 @@
+@use 'canela' as *;
+@use 'foundersGrotesk' as *;
+
 $lavender: #f3dcf0;
 $persimmon: #f04646;
 $navy: #0a4774;
@@ -6,9 +9,6 @@ $white: #fff;
 $weight-light: 300;
 $weight-regular: 400;
 $weight-medium: 500;
-
-@import 'canela';
-@import 'foundersGrotesk';
 
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -65,7 +65,7 @@ header {
     background-color: $lavender;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 0px;
     width: 100%;
     z-index: -1;
   }
@@ -112,8 +112,8 @@ header {
   }
 
   .intro-email {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 90px;
+    margin-bottom: 25px;
   }
   .intro-social {
     align-items: center;
@@ -186,7 +186,15 @@ header {
 }
 
 .cv {
+  // Sits above .excited so the red band passes behind it: the multiply blend
+  // only sees what is painted below, so this stays a clean white knockout
+  // rather than going muddy, and the navy text keeps full contrast.
+  background-color: $white;
+  // mix-blend-mode: soft-light;
   color: $navy;
+  padding: 40px;
+  position: relative;
+  z-index: 0;
 
   h2 {
     @include typeface-founders-grotesk;
@@ -322,6 +330,7 @@ header {
 
   .cv {
     margin: 30px 30px 40px;
+    padding: 30px;
 
     h2 {
       font-size: 12px;

@@ -84,7 +84,7 @@ header h1 {
   background-color: #f3dcf0;
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 0px;
   width: 100%;
   z-index: -1;
 }
@@ -129,8 +129,8 @@ header h1 {
   border-bottom-color: #0a4774;
 }
 .intro .intro-email {
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 90px;
+  margin-bottom: 25px;
 }
 .intro .intro-social {
   align-items: center;
@@ -200,7 +200,11 @@ header h1 {
 }
 
 .cv {
+  background-color: #fff;
   color: #0a4774;
+  padding: 40px;
+  position: relative;
+  z-index: 0;
 }
 .cv h2 {
   font-family: "Founders Grotesk Web", "Helvetica", -apple-system, "Arial", sans-serif;
@@ -314,6 +318,7 @@ header h1 {
   }
   .cv {
     margin: 30px 30px 40px;
+    padding: 30px;
   }
   .cv h2 {
     font-size: 12px;
