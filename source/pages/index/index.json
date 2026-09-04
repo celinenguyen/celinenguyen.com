@@ -1,14 +1,72 @@
 {
-  "ExcitedBy": [
-      "Contemporary literature",
-      "Software's influence on culture",
-      "The handmade, handcoded web",
-      "Intersections between design process and writing process",
-      "Interdisciplinary endeavors",
-      "The joy of a good groupchat",
-      "Reading books, not feeds",
-      "Calligraphy",
-      "Twentieth-century history",
-      "The resurgence of physical crafts in a digital age"
-    ]
+  "excitedBy": [
+    "Contemporary literature",
+    "Software's influence on culture",
+    "Design process and writing process",
+    "Interdisciplinary practice",
+    "The joy of a good groupchat",
+    "Reading books, not feeds",
+    "Community endeavors",
+    "The long twentieth century",
+    "The resurgence of physical crafts in a digital age"
+  ],
+  "thisYear": [
+    {
+      "text": "In NYC"
+    },
+    {
+      "text": "Wrote about <a href=\"https://asteriskmag.com/issues/15/why-we-like-things\">taste</a> (and why we like what we like) for <em>Asterisk</em>"
+    },
+    {
+      "text": "Discussed nurturing your mind on <em><a href=\"https://www.dialectic.fm/celine-nguyen\">Dialectic</a></em>"
+    },
+    {
+      "text": "Part of <a href=\"https://www.instagram.com/p/DcRORfADkHu/?img_index=2\">NEW INC</a>‘s Y13 Art & Code cohort"
+    },
+    {
+      "text": "One of the NBCC's <a href=\"https://www.bookcritics.org/emerging-critics/\">Emerging Critics</a> for 2025&ndash;26"
+    }
+  ],
+  "previously": [
+    {
+      "text": "Wrote about <a href=\"https://www.emptysetmag.com/articles/the-afterlives-of-computer-art\">computer art</a> <em>&</em> archiving",
+      "datetime": "2026"
+    },
+    {
+      "text": " <a href=\"https://www.personalcanon.com/p/no-one-told-me-about-proust\">Proust</a>",
+      "datetime": "2025"
+    },
+    {
+      "text": "<a href=\"https://www.theatlantic.com/books/archive/2025/06/invention-of-design-maggie-gram-book-review/683302/\">Design thinking</a>",
+      "datetime": "2025"
+    },
+    {
+      "text": "<a href=\"https://clereviewofbooks.com/feelings-over-facts-conspiracy-theories-and-the-internet-novel/\">Conspiracy theories</a>",
+      "datetime": "2024"
+    },
+    {
+      "text": "<a href=\"https://lareviewofbooks.org/article/seeing-like-a-simulation/\">Simulation games</a>",
+      "datetime": "2024"
+    },
+    {
+      "text": "<a href=\"https://www.personalcanon.com/p/research-as-leisure-activity\">Research as leisure activity</a>",
+      "datetime": "2024"
+    },
+    {
+      "text": "Quoted in the <a href=\"https://www.newyorker.com/news/fault-lines/if-you-quit-social-media-will-you-read-more-books\"><em>New Yorker</em></a> about literature and social media",
+      "datetime": "2025"
+    },
+    {
+      "text": "Appeared in the <a href=\"https://podcasts.apple.com/gb/podcast/not-reading-in-the-time-of-robots-with-celine/id1507832825?i=1000741724676\"><em>Time to Say Goodbye</em></a> podcast",
+      "datetime": "2025"
+    },
+    {
+      "text": "Studied <!--<a href=\"https://www.rca.ac.uk/degree-programmes/history-of-design-ma/\" title=\"V&A/RCA History of Design MA\">-->history<!--</a>--> at the V&A Museum/Royal College of Art",
+      "datetime": "2020/2021"
+    },
+    {
+      "text": "And before that: computer science <em>&</em> design at Carnegie Mellon",
+      "datetime": "2011/2016"
+    }
+  ]
 }

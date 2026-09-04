@@ -1,6 +1,8 @@
 ### For developing
 
-- Run `npx @11ty/eleventy --serve`
+- Run `npm install` first — without it, `npx` downloads the *latest* Eleventy
+  instead of the pinned v2, which builds an empty page
+- Run `npx eleventy --serve`
 - Run `npm run watch:sass`
 - View at http://localhost:8080/
 

@@ -3,6 +3,24 @@ layout: layouts/index.njk
 permalink: /
 ---
 
+{#
+  Renders a list of CV entries into one flowing paragraph.
+  Each entry has `text` (may contain inline HTML) and an optional `datetime`,
+  which is appended as a <time> element after a thin space, before the period.
+  The visible year defaults to `datetime` with "/" swapped for an en dash
+  (2011/2016 -> 2011–2016); set `label` on the entry to override it.
+#}
+{% macro cvEntries(entries) -%}
+  {%- for entry in entries -%}
+    {{ entry.text | safe }}
+    {%- if entry.datetime -%}
+      {%- set year = entry.label or (entry.datetime | replace("/", "–")) -%}
+      &thinsp;<time datetime="{{ entry.datetime }}">{{ year }}</time>
+    {%- endif -%}
+    .{% if not loop.last %} {% endif %}
+  {%- endfor -%}
+{%- endmacro %}
+
 <div class="content">
   <section class="intro">
     <div class="intro-color"></div>
@@ -11,22 +29,19 @@ permalink: /
       <a href="mailto:hello@celinenguyen.com">hello@celinenguyen.com</a>
     </p>
     <p class="intro-social">
-      <a href="http://instagram.com/doublepluslovely">Instagram</a>
+      <a href="https://www.are.na/celine-nguyen">Are.na</a>
       <span class="intro-social-divider">✦</span>
       <a href="https://twitter.com/mynameisceline">Twitter</a>
       <span class="intro-social-divider">✦</span>
+      <a href="http://instagram.com/doublepluslovely">Instagram</a>
+      <span class="intro-social-divider">✦</span>
       <a href="https://www.goodreads.com/user/show/23270655-celine-nguyen" title="Goodreads">Goodreads</a>
-      <span class="intro-social-divider">✦</span>
-      <a href="https://www.are.na/celine-nguyen">Are.na</a>
-      <span class="intro-social-divider">✦</span>
-      <a href="https://www.pinterest.com/celinenguyen/">Pinterest</a>
-      
     </p>
   </section>
   <section class="excited">
     <h2 class="excited-open">I'm very excited about</h2>
     <p class="excited-list">
-      {% for e in ExcitedBy %}
+      {% for e in excitedBy %}
         {% if loop.index is odd %}
           <span class="a">{{ e }}</span>
         {% else %}
@@ -41,12 +56,12 @@ permalink: /
   </section>
   <section class="cv">
     <section class="cv-right-now">
-      <h2>Lately</h2>
-      <p>Designing at <a href="https://watershed.com/en-GB">Watershed</a> in London. Quoted in the <a href="https://www.newyorker.com/news/fault-lines/if-you-quit-social-media-will-you-read-more-books"><em>New Yorker</em></a> about literature and social media. Appeared in the <a href="https://podcasts.apple.com/gb/podcast/not-reading-in-the-time-of-robots-with-celine/id1507832825?i=1000741724676"><em>Time to Say Goodbye</em></a> podcast. One of the NBCC's <a href="https://www.bookcritics.org/emerging-critics/">Emerging Critics</a> for 2025&ndash;26.
+      <h2>This year</h2>
+      <p>{{ cvEntries(thisYear) | safe }}</p>
     </section>
     <section class="cv-previously">
       <h2>Previously</h2>
-      <p>Designed at Notion&thinsp;<time datetime="2022/2024">2022–2024</time>. Computational writing residency at the Banff Centre&thinsp;<time datetime="2022">2022</time>. Studied <!--<a href="https://www.rca.ac.uk/degree-programmes/history-of-design-ma/" title="V&A/RCA History of Design MA">-->design history<!--</a>--> at the V&A Museum/Royal College of Art <time datetime="2020/2021">2020–2021</time>. Spoke at <!-- <a href="https://www.youtube.com/watch?v=gFwocx7kpOA&list=PLBsiKvJPy6IEgUq1phJjNbtCwrqfqipLk&index=11"> -->AIGA’s Emerging Designers Symposium<!--</a>-->&thinsp;<time datetime="2017">2017</time>. Designed at Palantir&thinsp;<time datetime="2016/2020">2016–2020</time>, Artsy&thinsp;<time datetime="2015">2015</time>,  Google&thinsp;<time datetime="2014">2014</time>. Studied computer science & design at Carnegie Mellon&thinsp;<time datetime="2011/2016">2011–2016</time>.</p>
+      <p>{{ cvEntries(previously) | safe }}</p>
     </section>
   </section>
 </div>

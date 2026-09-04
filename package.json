@@ -16,6 +16,6 @@
   "homepage": "https://celinenguyen.com",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "sass": "^1.45.2"
+    "sass": "^1.104.0"
   }
 }
